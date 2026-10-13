@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large Model Checkpoints & Weights (>50MB / >100MB)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.h5
+*.pb
+checkpoints/
+experiments/checkpoints/
+
+# Datasets and large archives
+*.npz
+*.npy
+*.zip
+*.tar
+*.tar.gz
+*.7z
+data/raw/
+data/processed/
+data/breast_dataset_cache.pt
+multimodal-oncology-ai/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+missfont.log

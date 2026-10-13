@@ -1,0 +1,31 @@
+# Dataset Configuration for Medical AI Reliability
+dataset_name: "pathmnist"
+data_dir: "data"
+download: true
+image_size: 28
+in_channels: 3
+num_classes: 9
+
+classes:
+  0: "adipose"
+  1: "background"
+  2: "debris"
+  3: "lymphocytes"
+  4: "mucus"
+  5: "smooth_muscle"
+  6: "normal_colon_mucosa"
+  7: "cancer_associated_stroma"
+  8: "colorectal_adenocarcinoma_epithelium"
+
+normalization:
+  mean: [0.7405, 0.5330, 0.7058]
+  std: [0.1237, 0.1768, 0.1244]
+
+augmentation:
+  random_horizontal_flip: true
+  random_vertical_flip: true
+  random_rotation_degrees: 15
+
+ood_datasets:
+  near_ood: "dermamnist"
+  far_ood: "bloodmnist"

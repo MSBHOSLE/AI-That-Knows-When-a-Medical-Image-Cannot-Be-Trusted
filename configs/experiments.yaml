@@ -1,0 +1,47 @@
+# Reliability & Stress Testing Experiments Configuration
+experiments:
+  seed: 42
+  results_dir: "experiments/results"
+  reports_dir: "reports"
+
+# 1. Uncertainty Quantification
+uncertainty:
+  mc_samples: 20
+  metrics:
+    - "predictive_entropy"
+    - "mutual_information"   # Epistemic uncertainty
+    - "variation_ratio"
+    - "max_softmax_prob"
+
+# 2. Probability Calibration
+calibration:
+  method: "temperature_scaling"
+  num_bins: 15
+
+# 3. Out-Of-Distribution (OOD) Detection
+ood:
+  methods:
+    - "msp"             # Maximum Softmax Probability baseline
+    - "energy"          # Energy-based OOD scoring
+    - "mahalanobis"     # Deep feature Mahalanobis distance
+  temperature: 1.0
+
+# 4. Controlled Image Corruptions Benchmark
+corruptions:
+  types:
+    - "gaussian_noise"
+    - "motion_blur"
+    - "brightness_shift"
+    - "contrast_shift"
+    - "he_stain_variation"   # Domain-specific H&E histological stain fading
+  severities: [1, 2, 3, 4, 5]
+
+# 5. Selective Prediction & Clinical Abstention
+abstention:
+  target_error_rate: 0.05    # Target selective risk alpha <= 5%
+  tradeoff_steps: 50
+  signals:
+    - "quality_check"        # Pre-inference image quality gate
+    - "ood_score"            # Feature distribution check
+    - "predictive_entropy"   # Epistemic uncertainty
+    - "calibrated_confidence"# Post-hoc calibrated confidence

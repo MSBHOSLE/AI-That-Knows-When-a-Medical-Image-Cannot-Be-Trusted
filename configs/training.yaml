@@ -1,0 +1,22 @@
+# Model Training Configuration
+model:
+  architecture: "resnet18_dropout"  # Custom Medical CNN with MC Dropout
+  dropout_rate: 0.2
+  feature_dim: 512
+  pretrained: false
+
+training:
+  epochs: 15
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "adamw"
+  lr_scheduler: "cosine"
+  early_stopping_patience: 5
+  seed: 42
+  device: "auto"  # auto selects mps, cuda, or cpu
+
+checkpointing:
+  save_dir: "experiments/checkpoints"
+  best_model_name: "best_model.pt"
+  log_interval: 50

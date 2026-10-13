@@ -1,0 +1,82 @@
+{
+  "classification": {
+    "accuracy": 0.8596100278551532,
+    "balanced_accuracy": 0.8172048670962078,
+    "macro_f1": 0.8075684428946225,
+    "macro_precision": 0.8193506872426124,
+    "macro_recall": 0.8172048670962078
+  },
+  "calibration": {
+    "optimal_temperature": 1.2251003980636597,
+    "uncalibrated_ece": 0.0655507456492101,
+    "calibrated_ece": 0.051727660019911026,
+    "calibrated_brier": 0.2270231395959854
+  },
+  "uncertainty": {
+    "error_detection_auroc": 0.7923757541739962,
+    "mean_predictive_entropy": 0.29726386070251465,
+    "mean_epistemic_uncertainty": 0.06208851560950279,
+    "silent_failures": {
+      "silent_failure_count": 298,
+      "total_errors": 1008,
+      "silent_fraction_of_errors": 0.29563492063492064,
+      "silent_fraction_of_dataset": 0.0415041782729805,
+      "silent_sample_indices": [
+        15,
+        35,
+        56,
+        68,
+        76,
+        91,
+        166,
+        190,
+        203,
+        235,
+        283,
+        285,
+        304,
+        313,
+        348,
+        411,
+        433,
+        450,
+        466,
+        491,
+        510,
+        546,
+        555,
+        640,
+        645,
+        705,
+        710,
+        721,
+        727,
+        730,
+        731,
+        756,
+        791,
+        802,
+        857,
+        864,
+        910,
+        932,
+        939,
+        985,
+        986,
+        988,
+        992,
+        994,
+        1029,
+        1036,
+        1080,
+        1092,
+        1148,
+        1165
+      ]
+    }
+  },
+  "selective_prediction": {
+    "aurc": 0.047844865563008515,
+    "clean_accuracy": 0.8596100278551532
+  }
+}

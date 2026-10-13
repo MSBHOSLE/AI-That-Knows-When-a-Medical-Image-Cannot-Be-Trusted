@@ -1,0 +1,219 @@
+{
+  "corruptions": {
+    "motion_blur": {
+      "1": {
+        "accuracy": 0.7,
+        "mean_entropy": 0.36248114705085754,
+        "abstention_rate": 0.35333333333333333
+      },
+      "2": {
+        "accuracy": 0.6,
+        "mean_entropy": 0.3938222825527191,
+        "abstention_rate": 0.44
+      },
+      "3": {
+        "accuracy": 0.5566666666666666,
+        "mean_entropy": 0.4043058156967163,
+        "abstention_rate": 0.47
+      },
+      "4": {
+        "accuracy": 0.49666666666666665,
+        "mean_entropy": 0.4118629992008209,
+        "abstention_rate": 0.4533333333333333
+      },
+      "5": {
+        "accuracy": 0.49,
+        "mean_entropy": 0.40518808364868164,
+        "abstention_rate": 0.48
+      }
+    },
+    "gaussian_noise": {
+      "1": {
+        "accuracy": 0.08,
+        "mean_entropy": 0.6905803680419922,
+        "abstention_rate": 0.59
+      },
+      "2": {
+        "accuracy": 0.056666666666666664,
+        "mean_entropy": 0.5767155885696411,
+        "abstention_rate": 0.7466666666666667
+      },
+      "3": {
+        "accuracy": 0.043333333333333335,
+        "mean_entropy": 0.20077113807201385,
+        "abstention_rate": 0.006666666666666667
+      },
+      "4": {
+        "accuracy": 0.043333333333333335,
+        "mean_entropy": 0.12259794771671295,
+        "abstention_rate": 0.0033333333333333335
+      },
+      "5": {
+        "accuracy": 0.043333333333333335,
+        "mean_entropy": 0.038796380162239075,
+        "abstention_rate": 0.38666666666666666
+      }
+    },
+    "defocus_blur": {
+      "1": {
+        "accuracy": 0.5666666666666667,
+        "mean_entropy": 0.38784006237983704,
+        "abstention_rate": 0.43333333333333335
+      },
+      "2": {
+        "accuracy": 0.44666666666666666,
+        "mean_entropy": 0.32766881585121155,
+        "abstention_rate": 0.8366666666666667
+      },
+      "3": {
+        "accuracy": 0.37666666666666665,
+        "mean_entropy": 0.26291829347610474,
+        "abstention_rate": 1.0
+      },
+      "4": {
+        "accuracy": 0.29333333333333333,
+        "mean_entropy": 0.2532837688922882,
+        "abstention_rate": 1.0
+      },
+      "5": {
+        "accuracy": 0.19,
+        "mean_entropy": 0.22570307552814484,
+        "abstention_rate": 1.0
+      }
+    },
+    "brightness_shift": {
+      "1": {
+        "accuracy": 0.12666666666666668,
+        "mean_entropy": 0.7701665759086609,
+        "abstention_rate": 0.73
+      },
+      "2": {
+        "accuracy": 0.12333333333333334,
+        "mean_entropy": 0.5410214066505432,
+        "abstention_rate": 0.4766666666666667
+      },
+      "3": {
+        "accuracy": 0.11,
+        "mean_entropy": 0.329628586769104,
+        "abstention_rate": 0.14333333333333334
+      },
+      "4": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.28218385577201843,
+        "abstention_rate": 0.12333333333333334
+      },
+      "5": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.2724932134151459,
+        "abstention_rate": 0.47333333333333333
+      }
+    },
+    "contrast_shift": {
+      "1": {
+        "accuracy": 0.32666666666666666,
+        "mean_entropy": 0.5545693039894104,
+        "abstention_rate": 0.5366666666666666
+      },
+      "2": {
+        "accuracy": 0.13333333333333333,
+        "mean_entropy": 0.9319341778755188,
+        "abstention_rate": 0.86
+      },
+      "3": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.9546874761581421,
+        "abstention_rate": 0.9
+      },
+      "4": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.8374922275543213,
+        "abstention_rate": 0.81
+      },
+      "5": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.7452037930488586,
+        "abstention_rate": 0.9433333333333334
+      }
+    },
+    "he_stain_variation": {
+      "1": {
+        "accuracy": 0.12666666666666668,
+        "mean_entropy": 0.1492772400379181,
+        "abstention_rate": 0.04
+      },
+      "2": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.11669741570949554,
+        "abstention_rate": 0.04
+      },
+      "3": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.0876651480793953,
+        "abstention_rate": 0.07
+      },
+      "4": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.04369772970676422,
+        "abstention_rate": 0.07666666666666666
+      },
+      "5": {
+        "accuracy": 0.10333333333333333,
+        "mean_entropy": 0.02297932282090187,
+        "abstention_rate": 0.09
+      }
+    }
+  },
+  "ood_detection": {
+    "dermamnist": {
+      "msp": {
+        "auroc": 0.45072599999999996,
+        "auprc": 0.625491217043907,
+        "fpr95": 0.994
+      },
+      "energy": {
+        "auroc": 0.422364,
+        "auprc": 0.5065024714395308,
+        "fpr95": 1.0
+      },
+      "mahalanobis": {
+        "auroc": 0.9925839999999999,
+        "auprc": 0.9949689234363923,
+        "fpr95": 0.01
+      }
+    },
+    "bloodmnist": {
+      "msp": {
+        "auroc": 0.572028,
+        "auprc": 0.734001263404773,
+        "fpr95": 0.994
+      },
+      "energy": {
+        "auroc": 0.55884,
+        "auprc": 0.7272000070960227,
+        "fpr95": 1.0
+      },
+      "mahalanobis": {
+        "auroc": 0.9892920000000001,
+        "auprc": 0.9939626283315736,
+        "fpr95": 0.008
+      }
+    },
+    "synthetic_noise": {
+      "msp": {
+        "auroc": 0.45138199999999995,
+        "auprc": 0.630059872933394,
+        "fpr95": 1.0
+      },
+      "energy": {
+        "auroc": 0.259108,
+        "auprc": 0.49111011746260613,
+        "fpr95": 1.0
+      },
+      "mahalanobis": {
+        "auroc": 0.9935679999999999,
+        "auprc": 0.9966386662103521,
+        "fpr95": 0.0
+      }
+    }
+  }
+}
